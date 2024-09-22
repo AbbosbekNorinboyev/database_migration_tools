@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/pdp_migration?currentSchema=spring_boot_flyway'
+    username: postgres
+    password: 2210
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: migration
+#    table: flyway_migration
